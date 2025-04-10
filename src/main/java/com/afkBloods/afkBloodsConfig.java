@@ -1,12 +1,13 @@
-package com.example;
+package com.afkBloods;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("example")
-public interface ExampleConfig extends Config
+public interface afkBloodsConfig extends Config
 {
+	/*
 	@ConfigItem(
 		keyName = "greeting",
 		name = "Welcome Greeting",
@@ -15,5 +16,5 @@ public interface ExampleConfig extends Config
 	default String greeting()
 	{
 		return "Hello";
-	}
+	}*/
 }

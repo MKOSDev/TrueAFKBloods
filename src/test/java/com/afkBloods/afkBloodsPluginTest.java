@@ -1,13 +1,13 @@
-package com.example;
+package com.afkBloods;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
+public class afkBloodsPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(afkBloodsPlugin.class);
 		RuneLite.main(args);
 	}
 }
