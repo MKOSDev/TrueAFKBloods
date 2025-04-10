@@ -1,9 +1,8 @@
-package com.afkBloods;
+package com.afkbloods;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
 import lombok.extern.slf4j.Slf4j;
-import net.runelite.api.ChatMessageType;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
 import net.runelite.api.events.GameStateChanged;
@@ -14,24 +13,16 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 import net.runelite.api.*;
 import net.runelite.api.coords.WorldPoint;
-import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
-import net.runelite.client.config.ConfigManager;
 import net.runelite.client.config.Notification;
-import net.runelite.client.eventbus.Subscribe;
-import net.runelite.client.plugins.Plugin;
-import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.Notifier;
 
 import java.time.Duration;
 import java.time.Instant;
 
-
-
-
 @Slf4j
 @PluginDescriptor(
-	name = "afkBloods"
+	name = "afkbloods"
 )
 public class afkBloodsPlugin extends Plugin
 {
@@ -103,9 +94,6 @@ public class afkBloodsPlugin extends Plugin
 			lastPosition = local.getWorldLocation();
 			return false;
 		}
-
-
-
 
 		WorldPoint position = local.getWorldLocation(); //current position
 		final ItemContainer inventory = client.getItemContainer(InventoryID.INVENTORY);
